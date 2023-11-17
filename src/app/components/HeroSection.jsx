@@ -5,7 +5,15 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+
 const HeroSection = () => {
+  const handleDownload = () => {
+    // Replace 'your-cv-file.pdf' with the actual file name or URL
+    const downloadLink = document.createElement('a');
+    downloadLink.href = 'public/Travis_Mundy_Resume_Nov_2023.pdf';
+    downloadLink.download = 'Travis_Mundy_Resume_Nov_2023.pdf';
+    downloadLink.click();
+    };
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -50,8 +58,8 @@ const HeroSection = () => {
               href="/"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
-              <span className="block bg-[#090915] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
+              <span className="block bg-[#090915] hover:bg-slate-800 rounded-full px-5 py-2"  onClick={handleDownload}>
+                Download Resume
               </span>
             </Link>
           </div>
