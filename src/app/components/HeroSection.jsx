@@ -32,11 +32,11 @@ const HeroSection = () => {
               sequence={[
                 "Travis",
                 2000,
-                "Software Dev",
+                "A Software Dev",
                 2000,
-                "Systems Dev",
+                "A Systems Dev",
                 2000,
-                "Full Stack Dev",
+                "A Full Stack Dev",
                 2000,
               ]}
               wrapper="span"
@@ -45,7 +45,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I am Software Developer, I have just completed my Computer Science degree as of December 2023.
+            I am a Software Developer. I have just completed my Computer Science degree as of December 2023.
           </p>
           <div>
             <Link
