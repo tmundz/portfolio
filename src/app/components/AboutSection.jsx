@@ -38,7 +38,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Grant MacEwan University, Edmonton, AB</li>
+        <li><p>BSc. in Computing Science | Grant MacEwan University, Edmonton, AB</p></li>
       </ul>
     ),
   },
@@ -61,8 +61,8 @@ const AboutSection = () => {
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
-                    I am a software developer interested in embedded systems, systems programming, and full-stack development. 
-                    My expertise revolves around crafting efficient low-level systems programs, 
+                    I am a software developer interested in embedded systems, full-stack development, and systems programming. 
+                    My expertise revolves around crafting efficient low-level programs, 
                     and I take immense joy in building applications that users find both valuable and enjoyable.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
