@@ -5,18 +5,33 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Tools",
-    id: "tools",
+    title: "Lang. Tools",
+    id: "lang. tools",
     content: (
       <ul className="list-disc pl-2">
         <li>C/C++</li>
         <li>Rust</li>
-        <li>Java</li>
         <li>Python</li>
+        <li>Java</li>
         <li>Go</li>
-        <li>BASH</li>
+        <li>Bash</li>
+        <li>SQL</li>
+        <li>Next.js/React</li>
+      </ul>
+    ),
+  },
+  {
+    title: "Dev. Tools",
+    id: "dev. tools",
+    content: (
+      <ul className="list-disc pl-2">
         <li>Git</li>
         <li>Docker</li>
+        <li>GDB</li>
+        <li>Visual Studio</li>
+        <li>Arm Cortex MCUs</li>
+        <li>Hyper-V/KVM</li>
+        <li>Arduino/ESP32</li>
       </ul>
     ),
   },
@@ -67,11 +82,18 @@ const AboutSection = () => {
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton
-                            selectTab={() => handleTabChange("tools")}
+                            selectTab={() => handleTabChange("lang. tools")}
+                            active={tab === "lang. tools"}
+                        >
+                            {" "}
+                            Lang. Tools{" "}
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("dev. tools")}
                             active={tab === "tools"}
                         >
                             {" "}
-                            Tools{" "}
+                            Dev. Tools{" "}
                         </TabButton>
                         <TabButton
                             selectTab={() => handleTabChange("skills")}
