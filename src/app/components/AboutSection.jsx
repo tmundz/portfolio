@@ -4,34 +4,18 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 
 const TAB_DATA = [
-  /*{
-    title: "Lang. Tools",
-    id: "lang. tools",
+  {
+    title: "Tools",
+    id: "tools",
     content: (
       <ul className="list-disc pl-2">
         <li>C/C++</li>
         <li>Rust</li>
-        <li>Python</li>
         <li>Java</li>
+        <li>Python</li>
         <li>Go</li>
         <li>Bash</li>
-        <li>SQL</li>
-        <li>JavaScript</li>
-      </ul>
-    ),
-  },*/
-  {
-    title: "Dev",
-    id: "dev",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Git</li>
-        <li>Docker</li>
-        <li>GDB</li>
-        <li>Visual Studio</li>
-        <li>Arm Cortex MCUs</li>
-        <li>Hyper-V/KVM</li>
-        <li>Arduino/ESP32</li>
+        <li></li>
       </ul>
     ),
   },
@@ -82,11 +66,11 @@ const AboutSection = () => {
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton
-                            selectTab={() => handleTabChange("dev")}
-                            active={tab === "dev"}
+                            selectTab={() => handleTabChange("tools")}
+                            active={tab === "tools"}
                         >
                             {" "}
-                            Dev. Tools{" "}
+                            Tools{" "}
                         </TabButton>
                         <TabButton
                             selectTab={() => handleTabChange("skills")}
