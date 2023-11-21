@@ -6,7 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  /*const [emailSubmitted, setEmailSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -37,7 +37,7 @@ const EmailSection = () => {
       console.log("Message sent.");
       setEmailSubmitted(true);
     }
-  };
+  };*/
 
   return (
     <section
