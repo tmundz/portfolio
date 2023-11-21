@@ -8,11 +8,11 @@ import Link from "next/link";
 
 const HeroSection = () => {
   const handleDownload = () => {
-    // Replace 'your-cv-file.pdf' with the actual file name or URL
-    const downloadLink = document.createElement('a');
-    downloadLink.href = 'public/Travis_Mundy_Resume_Nov_2023.pdf';
-    downloadLink.download = 'Travis_Mundy_Resume_Nov_2023.pdf';
-    downloadLink.click();
+        // Replace 'your-cv-file.pdf' with the actual file name or URL
+        const downloadLink = document.createElement('a');
+        downloadLink.href = 'public/Travis_Mundy_Resume_Nov_2023.pdf';
+        downloadLink.download = 'Travis_Mundy_Resume_Nov_2023.pdf';
+        downloadLink.click();
     };
   return (
     <section className="lg:py-16">
@@ -70,13 +70,14 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.png"
+              src="/images/me.jpg"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              width={300}
-              height={300}
+              style={{ borderRadius: '30%' }}
+              width={350}
+              height={325}
             />
           </div>
         </motion.div>
