@@ -5,8 +5,8 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "lang. Tools",
-    id: "lang. tools",
+    title: "lang",
+    id: "lang",
     content: (
       <ul className="list-disc pl-2">
         <li>C/C++</li>
@@ -21,8 +21,8 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "dev. Tools",
-    id: "dev. tools",
+    title: "dev",
+    id: "dev",
     content: (
       <ul className="list-disc pl-2">
         <li>Git</li>
@@ -82,15 +82,15 @@ const AboutSection = () => {
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton
-                            selectTab={() => handleTabChange("lang. tools")}
-                            active={tab === "lang. tools"}
+                            selectTab={() => handleTabChange("lang")}
+                            active={tab === "lang"}
                         >
                             {" "}
                             Lang. Tools{" "}
                         </TabButton>
                         <TabButton
-                            selectTab={() => handleTabChange("dev. tools")}
-                            active={tab === "dev. tools"}
+                            selectTab={() => handleTabChange("dev")}
+                            active={tab === "dev"}
                         >
                             {" "}
                             Dev. Tools{" "}
