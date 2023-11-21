@@ -45,7 +45,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I am Software Developer, I have just completed my Computer Science degree as of december 2023.
+            I am Software Developer, I have just completed my Computer Science degree as of December 2023.
           </p>
           <div>
             <Link

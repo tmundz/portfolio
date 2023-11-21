@@ -61,9 +61,9 @@ const AboutSection = () => {
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                     <p className="text-base lg:text-lg">
-                        I am a Software Developer with and interest in secure systems programming
-                        and fullstack development and I enjoy creating efficient low level systems programs.
-                        I enjoy creating applications that people find useful.
+                    I am a software developer interested in embedded systems, systems programming, and full-stack development. 
+                    My expertise revolves around crafting efficient low-level systems programs, 
+                    and I take immense joy in building applications that users find both valuable and enjoyable.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton
