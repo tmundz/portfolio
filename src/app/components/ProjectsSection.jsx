@@ -20,7 +20,7 @@ const projectsData = [
     description: "Develop a comprehensive task scheduler in Rust featuring a multilevel feedback queue system, concurrent AVL tree, and doubly linked list, all built from the ground up.",
     image: "images/projects/cpu.jpg",
     tag: ["All", "Sys"],
-    gitUrl: "/https://github.com/tmundz/task-scheduler",
+    gitUrl: "https://github.com/tmundz/task-scheduler",
     previewUrl: "/",
   },
   {
