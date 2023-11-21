@@ -45,56 +45,56 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("tools");
-  const [isPending, startTransition] = useTransition();
+    const [tab, setTab] = useState("tools");
+    const [isPending, startTransition] = useTransition();
 
-  const handleTabChange = (id) => {
-    startTransition(() => {
-      setTab(id);
-    });
-  };
+    const handleTabChange = (id) => {
+        startTransition(() => {
+            setTab(id);
+        });
+    };
 
-  return (
-    <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-          I am a Software Developer with and interest in secure systems programming 
-          and fullstack development and I enjoy creating efficient low level systems programs.
-            I enjoy creating applications that people find useful.
-          </p>
-          <div className="flex flex-row justify-start mt-8">
-          <TabButton
-              selectTab={() => handleTabChange("tools")}
-              active={tab === "tools"}
-            >
-              {" "}
-              Tools{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
-            >
-              {" "}
-              Education{" "}
-            </TabButton>
-          </div>
-          <div className="mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+    return (
+        <section className="text-white" id="about">
+            <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+                <Image src="images/about-image.png" alt="" width={500} height={500} />
+                <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+                    <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+                    <p className="text-base lg:text-lg">
+                        I am a Software Developer with and interest in secure systems programming
+                        and fullstack development and I enjoy creating efficient low level systems programs.
+                        I enjoy creating applications that people find useful.
+                    </p>
+                    <div className="flex flex-row justify-start mt-8">
+                        <TabButton
+                            selectTab={() => handleTabChange("tools")}
+                            active={tab === "tools"}
+                        >
+                            {" "}
+                            Tools{" "}
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("skills")}
+                            active={tab === "skills"}
+                        >
+                            {" "}
+                            Skills{" "}
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("education")}
+                            active={tab === "education"}
+                        >
+                            {" "}
+                            Education{" "}
+                        </TabButton>
+                    </div>
+                    <div className="mt-8">
+                        {TAB_DATA.find((t) => t.id === tab).content}
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 };
 
 export default AboutSection;
