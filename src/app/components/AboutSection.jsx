@@ -4,9 +4,9 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 
 const TAB_DATA = [
-  {
-    title: "Lang",
-    id: "lang",
+  /*{
+    title: "Lang. Tools",
+    id: "lang. tools",
     content: (
       <ul className="list-disc pl-2">
         <li>C/C++</li>
@@ -16,10 +16,10 @@ const TAB_DATA = [
         <li>Go</li>
         <li>Bash</li>
         <li>SQL</li>
-        <li>Next.js/React</li>
+        <li>JavaScript</li>
       </ul>
     ),
-  },
+  },*/
   {
     title: "Dev",
     id: "dev",
@@ -81,13 +81,6 @@ const AboutSection = () => {
                     and I take immense joy in building applications that users find both valuable and enjoyable.
                     </p>
                     <div className="flex flex-row justify-start mt-8">
-                        <TabButton
-                            selectTab={() => handleTabChange("lang")}
-                            active={tab === "lang"}
-                        >
-                            {" "}
-                            Lang. Tools{" "}
-                        </TabButton>
                         <TabButton
                             selectTab={() => handleTabChange("dev")}
                             active={tab === "dev"}
