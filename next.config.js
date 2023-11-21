@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const repo = "portfolio";
+const repo = "https://tmundz.github.io/portfolio/";
 const assetPrefix = `/${repo}/`;
 const basePath = `/${repo}`;
 const nextConfig = {
