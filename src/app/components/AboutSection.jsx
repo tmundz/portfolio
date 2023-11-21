@@ -5,7 +5,7 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Lang. Tools",
+    title: "lang. Tools",
     id: "lang. tools",
     content: (
       <ul className="list-disc pl-2">
@@ -21,7 +21,7 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Dev. Tools",
+    title: "dev. Tools",
     id: "dev. tools",
     content: (
       <ul className="list-disc pl-2">
