@@ -10,7 +10,7 @@ const projectsData = [
     title: "Chess-Bot",
     description: "A Physical board that a human can play against",
     image: "/images/projects/chess.png",
-    tag: ["All", "Other"],
+    tag: ["All", "Uni", "Other"],
     gitUrl: "https://github.com/tmundz/KingGizzard",
     previewUrl: "/",
   },
@@ -25,10 +25,10 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "A Simple Blog App",
-    description: "Using this project as a way to learn Typescript and the MERN stack",
-    image: "",
-    tag: ["All", "Web"],
+    title: "Shell Application",
+    description: "A simple shell application that allows users to navigate the file system and execute commands, contains features such as pipe, foreground proecesses, background processes, and redirection. Created in C",
+    image: "/images/projects/shell.jpg",
+    tag: ["All", "Sys", "Uni"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -65,8 +65,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Uni"
+          isSelected={tag === "Uni"}
         />
         <ProjectTag
           onClick={handleTagChange}
