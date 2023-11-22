@@ -76,8 +76,8 @@ const HeroSection = () => {
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               style={{ borderRadius: '30%' }}
-              width={325}
-              height={325}
+              width={300}
+              height={300}
             />
           </div>
         </motion.div>
