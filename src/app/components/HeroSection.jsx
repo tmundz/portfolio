@@ -10,7 +10,7 @@ const HeroSection = () => {
   const handleDownload = () => {
         // Replace 'your-cv-file.pdf' with the actual file name or URL
         const downloadLink = document.createElement('a');
-        downloadLink.href = 'public/Travis_Mundy_Resume_Nov_2023.pdf';
+        downloadLink.href = 'Travis_Mundy_Resume_Nov_2023.pdf';
         downloadLink.download = 'Travis_Mundy_Resume_Nov_2023.pdf';
         downloadLink.click();
     };
