@@ -70,13 +70,13 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[400px] relative">
+          <div className="rounded-full bg-[#090915] w-[250px] h-[250px] lg:w-[350px] lg:h-[400px] relative">
             <Image
               src="images/me.jpg"
               alt="hero image"
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               style={{ borderRadius: '30%' }}
-              width={350}
+              width={325}
               height={325}
             />
           </div>
