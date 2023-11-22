@@ -15,7 +15,22 @@ const TAB_DATA = [
         <li>Python</li>
         <li>Go</li>
         <li>Bash</li>
-        <li></li>
+        <li>Next.js/React</li>
+      </ul>
+    ),
+  }, 
+  {
+    title: "Dev",
+    id: "dev",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Git</li>
+        <li>Docker</li>
+        <li>GDB</li>
+        <li>Visual Studio</li>
+        <li>Arm Cortex MCUs</li>
+        <li>Hyper-V/KVM</li>
+        <li>Arduino/ESP32</li>
       </ul>
     ),
   },
@@ -37,7 +52,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li><p>BSc. in Computing Science | Grant MacEwan University, Edmonton, AB</p></li>
+        <li>BSc. in Computing Science | Grant MacEwan University, Edmonton, AB</li>
+        <li>Microcontroller Embedded C Programming: Absolute Beginners | Udemy</li>
       </ul>
     ),
   },
@@ -70,7 +86,14 @@ const AboutSection = () => {
                             active={tab === "tools"}
                         >
                             {" "}
-                            Tools{" "}
+                            Lang. Tools{" "}
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("dev")}
+                            active={tab === "dev"}
+                        >
+                            {" "}
+                            Dev. Tools{" "}
                         </TabButton>
                         <TabButton
                             selectTab={() => handleTabChange("skills")}

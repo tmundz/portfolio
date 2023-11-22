@@ -10,7 +10,7 @@ const projectsData = [
     title: "Chess-Bot",
     description: "Experience the future of chess with our physical chessboard equipped with OpenCV technology. Make your move, and watch as the board autonomously responds, seamlessly moving the corresponding chess piece. This innovative blend of traditional gameplay and advanced computer vision creates a captivating and interactive chess experience.",
     image: "images/projects/chess.png",
-    tag: ["All", "Uni", "Other"],
+    tag: ["All", "Robotics"],
     gitUrl: "https://github.com/tmundz/KingGizzard",
     previewUrl: "/",
   },
@@ -19,7 +19,7 @@ const projectsData = [
     title: "Multi-Level Feedback Queue Scheduler",
     description: "Develop a comprehensive task scheduler in Rust featuring a multilevel feedback queue system, concurrent AVL tree, and doubly linked list, all built from the ground up.",
     image: "images/projects/cpu.jpg",
-    tag: ["All", "Sys"],
+    tag: ["All", "Systems"],
     gitUrl: "https://github.com/tmundz/task-scheduler",
     previewUrl: "/",
   },
@@ -28,7 +28,7 @@ const projectsData = [
     title: "Shell Application",
     description: "Developed in C, this straightforward shell application empowers users to navigate the file system effortlessly, execute commands, and harness essential features like piping, foreground and background processes, and redirection.",
     image: "images/projects/shell.jpg",
-    tag: ["All", "Sys", "Uni"],
+    tag: ["All", "Systems"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -65,18 +65,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Uni"
-          isSelected={tag === "Uni"}
+          name="Systems"
+          isSelected={tag === "Systems"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Sys"
-          isSelected={tag === "Sys"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Other"
-          isSelected={tag === "Other"}
+          name="Robotics"
+          isSelected={tag === "Robotics"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
