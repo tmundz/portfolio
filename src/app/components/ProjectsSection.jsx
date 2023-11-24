@@ -32,6 +32,15 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "/",
   },
+  {
+    id: 3,
+    title: "Finance Dashboard",
+    description: "I'm following a tutorial to construct a finance dashboard using the MERN stack and TypeScript. This project is a foundation for my upcoming project, an expense tracker. The dashboard is currently being developed, marking a key step in my ongoing learning journey.",
+    image: "images/projects/finance.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/tmundz/Finance",
+    previewUrl: "/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -72,6 +81,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Robotics"
           isSelected={tag === "Robotics"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Web"
+          isSelected={tag === "Web"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
