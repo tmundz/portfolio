@@ -29,7 +29,7 @@ const projectsData = [
     description: "This is a school project and sadly I cannot showcase the source code publically. Developed in C, this straightforward shell application empowers users to navigate the file system effortlessly, execute commands, and harness essential features like piping, foreground and background processes, and redirection.",
     image: "images/projects/shell.jpg",
     tag: ["All", "Systems"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/tmundz/Uni_projects",
     previewUrl: "/",
   },
   {
