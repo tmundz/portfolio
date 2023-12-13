@@ -25,11 +25,11 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "Shell Application",
-    description: "This is a school project and sadly I cannot showcase the source code publically. Developed in C, this straightforward shell application empowers users to navigate the file system effortlessly, execute commands, and harness essential features like piping, foreground and background processes, and redirection.",
+    title: "Practice Kernel",
+    description: "I'm currently engaged in a project derived from a Udemy course focused on crafting a simple multithreaded kernel. This endeavour, implemented in both C and ASM, serves as a hands-on learning experience, providing a comprehensive understanding of kernel intricacies.",
     image: "images/projects/shell.jpg",
     tag: ["All", "Systems"],
-    gitUrl: "https://github.com/tmundz/Uni_projects",
+    gitUrl: "https://github.com/tmundz/kernel_practice",
     previewUrl: "/",
   },
   {
