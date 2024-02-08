@@ -33,12 +33,12 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 3,
-    title: "Finance Dashboard",
-    description: "I'm following a tutorial to construct a finance dashboard using the MERN stack and TypeScript. This project is a foundation for my upcoming project, an expense tracker. The dashboard is currently being developed, marking a key step in my ongoing learning journey.",
-    image: "images/projects/finance.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/tmundz/Finance",
+    id: 4,
+    title: "Linear Algebra ToolKit",
+    description: "I'm developing a Linear Algebra ToolKit using C++. I am using this to create common Matrix methods such as subtracting, adding, and determinants.",
+    image: "images/projects/matrix.jpg",
+    tag: ["All", "Systems"],
+    gitUrl: "https://github.com/tmundz/lat",
     previewUrl: "/",
   },
 ];
